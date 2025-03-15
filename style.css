@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -110,6 +115,7 @@ button:hover{
     font-size: 1rem;
     color: hsl(243, 87%, 12%);
     padding-right: 30%;
+    font-family: "open sans", serif;
 }
 
 .second-page{
@@ -140,7 +146,7 @@ button:hover{
 }
 
 .testimonial-icon{
-    height: 2vw;
+    height: 35px;
     border-radius: 50%;
 }
 
@@ -181,6 +187,8 @@ button:hover{
     grid-template-columns: 1fr 1fr;
     gap: 10vw;
     font-family: "Raleway", serif;
+    padding-right: 6%;
+    min-height: 350px;
 }
 
 .acess-page h2{
@@ -270,4 +278,169 @@ footer a, footer p{
 
 .contact img{
     width: 5%;
+    height: 5%;
+}
+
+@media (max-width: 480px) {
+
+    header img{
+        width: 25vw;
+        display: block;
+    }
+
+    .item-navbar{
+    font-size: 3.7dvw;
+    }
+
+    .container-navbar{
+        padding-left: 15dvw;
+    }
+
+    .first-illustration,.second-illustration{
+        margin: 0 auto;
+        width: 90dvw;
+        height: auto;
+    }
+
+    .starting-page{
+        display: flex;
+        flex-flow: row-reverse wrap-reverse;
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+        padding-right: 6%;
+    }
+
+    .starting-page p{
+        font-size: 14px !important;
+        padding-right: 6%;
+    }
+
+    #email{
+        width: 70dvw;
+        height: 12dvw;
+        margin-bottom: 10px;
+    }
+
+    .starting-page button{
+        width: 70dvw;
+        height: 12dvw;
+        font-size: 15px;
+        margin-right: 10px;
+        margin-bottom: 5rem;
+    }
+
+    .second-page{
+        flex-flow: row-reverse wrap-reverse;
+        text-align: center;
+    }
+
+   .second-page h1{
+        font-size: 1rem;
+   }
+   .second-page p:not(.testimonial-text,.testimonial-name,.testimonial-role){
+        font-size: 0.8rem !important;
+        text-align: start;
+        font-weight: 400 !important;
+        padding-right: 10%;
+   }
+   .second-page a{
+    font-size: 0.9rem;
+   }
+
+   .quotes{
+        padding-right: 110px;
+   }
+
+   .testimonial-text{
+        font-size: 0.7rem !important;
+        padding-right: 20%;
+        text-align: start;
+        width: 300px;
+   }
+
+   .testimonial-icon{
+    padding-right: 0;
+   }
+
+   .testimonial-profile{
+    font-size: 12px;
+    width: 200px;
+    text-align: start;
+    padding-top: 20px;
+   }
+
+   .contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   .logo-footer{
+    width: 10rem;
+    padding-top: 40px;
+    padding-bottom: 30px;
+   }
+
+   .contact img{
+    width: 8%;
+   }
+
+   .social-media{
+    justify-content: center;
+    gap: 10px;
+   }
+
+   .social-media-icons{
+    width: 10%;
+   }
+}
+
+@media (max-width:765px){
+   .acess-page{
+    height: 100dvw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .acess-page h2{
+    font-size: 1.3rem;
+    padding-top: 40px;
+   }
+
+   .acess-page p{
+    font-size: 1rem;
+   }
+
+   #text{
+    width: 60dvw;
+    height: 10dvw;
+   }
+
+   .get-acess button{
+    width: 60dvw;
+    height: 10dvw;
+    font-size: 0.8rem;
+   }
+}
+
+@media (min-width: 480px) and (max-width: 765px) {
+    .acess-page{
+    max-height: 550px;
+    }
+}
+
+@media(min-width: 880px) and (max-width: 1350px){
+    .container-navbar{
+        padding-left: 40vw;
+    }
+}
+
+@media(min-width: 475px) and (max-width: 880px){
+    .container-navbar{
+        padding-left: 20vw;
+    }
 }
